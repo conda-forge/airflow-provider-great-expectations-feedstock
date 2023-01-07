@@ -26,7 +26,7 @@ requirements:
 
 test:
   imports:
-    - airflow_provider_great_expectations
+    - provider_great_expectations
   commands:
     - pip check
   requires:
