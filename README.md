@@ -1,7 +1,7 @@
 About airflow-provider-great-expectations
 =========================================
 
-Home: https://github.com/great-expectations/airflow-provider-great-expectations
+Home: https://github.com/astronomer/airflow-provider-great-expectations
 
 Package license: Apache-2.0
 
