@@ -1,11 +1,11 @@
-About airflow-provider-great-expectations
-=========================================
+About airflow-provider-great-expectations-feedstock
+===================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/airflow-provider-great-expectations-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/astronomer/airflow-provider-great-expectations
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/airflow-provider-great-expectations-feedstock/blob/main/LICENSE.txt)
 
 Summary: An Apache Airflow provider for Great Expectations
 
