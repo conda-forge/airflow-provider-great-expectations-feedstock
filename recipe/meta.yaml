@@ -1,5 +1,5 @@
 {% set name = "airflow-provider-great-expectations" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/airflow-provider-great-expectations-{{ version }}.tar.gz
-  sha256: 8c7adaee9fb35388dbc2872a408d2cb0c9b28b48013880625d2462a15624419b
+  sha256: fb8a16c359c0c1a2f15e4e86845051f2a2c01907eae362d2d27d0e5794fa5c69
 
 build:
   noarch: python
