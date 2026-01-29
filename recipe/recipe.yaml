@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: airflow-provider-great-expectations
+  version: 1.0.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 4f28f649dd43ca9b99ba76b93de726b17e87b2961114f1e3cfa0c951a52443f5
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - hatchling
+  run:
+    - python >=${{ python_min }}
+    - apache-airflow >=2.1,<4
+    - great-expectations >=1.7.0,<2
+    - structlog <25.5.0
+
+tests:
+  - python:
+      imports:
+        - great_expectations_provider
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: An Apache Airflow provider for Great Expectations
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  homepage: https://github.com/astronomer/airflow-provider-great-expectations
+
+extra:
+  recipe-maintainers:
+    - xylar
+    - rxm7706
